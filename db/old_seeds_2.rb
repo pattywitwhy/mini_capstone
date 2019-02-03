@@ -1,9 +1,3 @@
-# Category.create!([
-#   {name: "Film"},
-#   {name: "Expensive"},
-#   {name: "Albums"},
-#   {name: "Bags"}
-# ])
 # Image.create!([
 #   {url: "https://i.etsystatic.com/9826448/r/il/8ccfd4/1238404882/il_fullxfull.1238404882_e5il.jpg", product_id: 6},
 #   {url: "https://i.etsystatic.com/9826448/r/il/daeba0/1285639435/il_1140xN.1285639435_m1kr.jpg", product_id: 6},
@@ -47,13 +41,6 @@
 #   {name: "Leather Camera Bag", price: "8.0", description: "Brown leather mini instax camera bag", in_stock: true, supplier_id: 3},
 #   {name: "Instax Instant Film", price: "12.0", description: "instax instant mini film 2 packs of 10 sheets", in_stock: true, supplier_id: 2}
 # ])
-# ProductCategory.create!([
-#   {product_id: 2, category_id: 1},
-#   {product_id: 1, category_id: 2},
-#   {product_id: 3, category_id: 2},
-#   {product_id: 7, category_id: 3},
-#   {product_id: 6, category_id: 4}
-# ])
 # Supplier.create!([
 #   {name: "Fujifilm Corporation", email: "fujifilm@gmail.com", phone_number: "773-876-9812"},
 #   {name: "Polaroid INC", email: "polaroid.picture@gmail.com", phone_number: "215-756-9345"},
@@ -64,3 +51,15 @@
 #   {name: "Jim Bean", email: "jim@gmail.com", password_digest: "$2a$10$eaDQGVdLH4k5SeT0HFZTI.MdhqFf4upf.MrRqE16A8EBaJyaa3Ikm", admin: false},
 #   {name: "Patty Hwang", email: "pattyxhwang@gmail.com", password_digest: "$2a$10$kSRJk098vvmD1vFqjEYyDu8.3uC6qCzmlg9Vi4BIqymdBaqJxS7Oe", admin: true}
 # ])
+
+
+Category.create(name: "Film")
+Category.create(name: "Expensive")
+Category.create(name: "Albums")
+Category.create(name: "Bags")
+
+ProductCategory.create(product_id: 2, category_id: 1)
+ProductCategory.create(product_id: 1, category_id: 2)
+ProductCategory.create(product_id: 3, category_id: 2)
+ProductCategory.create(product_id: 7, category_id: 3)
+ProductCategory.create(product_id: 6, category_id: 4)
